@@ -1,0 +1,39 @@
+{
+  "name": "clean-html-extractor-mcp",
+  "author": "seonhyuk",
+  "version": "0.0.1",
+  "description": "read html from url",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "@seonhyuk/clean-html-extractor-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsup",
+    "lint": "eslint src --ext .ts --fix"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "packageManager": "pnpm@10.6.5",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "cheerio": "^1.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "8.57.1",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-import-resolver-typescript": "^4.3.1",
+    "eslint-plugin-import": "^2.31.0",
+    "prettier": "^3.5.3",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  }
+}
